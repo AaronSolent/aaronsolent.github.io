@@ -11,8 +11,9 @@
 <div id="demo">
 <h2>Page Test 3</h2>
 <button type="button" onclick="loadDoc()">Change Content</button>
+<button type="button" onclick="MyFunction()">Change Content</button>
 </div>
-    
+
 <script>      
 function loadDoc() 
 {
@@ -23,7 +24,7 @@ function loadDoc()
       this.responseText;
     }
   };
-xhttp.open("GET", "read.txt", true);
+xhttp.open("GET", "ftp://NewPlayer:PlayerPass_123@66.220.9.50/drivehqshare/aaronbacon/GroupWrite/robboss.txt", true);
 xhttp.send();
 }
 </script>

@@ -21,8 +21,11 @@ function loadDoc() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "read.txt", true);
-  xhttp.send();
+xhttp.open("POST", "read.txt", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("Testing Null");
+xhttp.open("GET", "read.txt", true);
+xhttp.send();
 }
 </script>
 </body>

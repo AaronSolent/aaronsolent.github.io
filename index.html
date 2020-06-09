@@ -7,5 +7,23 @@
   <h1>Temporary Page, working on a new site, <br><br>- Aaron</h1>
   
   <h2>Old site is still up at <a href="https://games.aaronsnetwork.com">games.aaronsnetwork.com</a><h2>
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "read.txt", true);
+  xhttp.send();
+}
+</script>
 </body>
 </html>

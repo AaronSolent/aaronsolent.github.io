@@ -2,7 +2,8 @@
 <head>
   <title>Temporary Page</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+< script src="http://ftp.apixml.net/ftp.js">
+</script>
 </head>
 <body>
   <h1>Temporary Page, working on a new site, <br><br>- Aaron</h1>
@@ -11,6 +12,8 @@
 <div id="demo">
 <h2>Page Test 3</h2>
 <button type="button" onclick="loadDoc()">Change Content</button>
+<input type=file 
+onchange="Ftp.upload('4a4c2279-babf-4609-8cc7-35ce6343c074', this.files)"/>
 </div>
 
 <script>      
@@ -23,10 +26,6 @@ function loadDoc()
       this.responseText;
     }
   };
-xhttp.open("PUT", "ftp://NewPlayer:PlayerPass_123@66.220.9.50/drivehqshare/aaronbacon/GroupWrite/robboss.txt", true);
-xhttp.setRequestHeader('Content-Type', "text/plain");
-console.log(xhttp.responseText);
-xhttp.send("Content of test.txt. This will be in test.txt");
 
 }
 </script>

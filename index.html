@@ -18,13 +18,16 @@ function loadDoc()
 {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4 && this.status == 0) {
       document.getElementById("demo").innerHTML =
       this.responseText;
     }
   };
-xhttp.open("GET", "ftp://NewPlayer:PlayerPass_123@66.220.9.50/drivehqshare/aaronbacon/GroupWrite/robboss.txt", true);
-xhttp.send();
+xhttp.open("PUT", "ftp://NewPlayer:PlayerPass_123@66.220.9.50/drivehqshare/aaronbacon/GroupWrite/robboss.txt", true);
+xhttp.setRequestHeader('Content-Type', "text/plain");
+console.log(xhttp.responseText);
+xhttp.send("Content of test.txt. This will be in test.txt");
+
 }
 </script>
 </body>

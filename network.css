@@ -3,14 +3,16 @@ body {
 }
 
 h1 {
-  font-family: Coda;
-  color: white;
+  font-family: 'Coda', cursive;
+  color: #00FF00;
   text-align: center;
+  font-size: calc(2vw + 2vh);
 }
 h2 {
-  font-family: Coda;
+  font-family: 'Coda', cursive;
   color: grey;
   text-align: center;
+  font-size: calc(2vw + 2vh);
 }
 .banner {
   display: block;

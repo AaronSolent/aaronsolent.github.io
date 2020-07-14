@@ -36,6 +36,12 @@ div.game-box{
 div.game-box:hover{
   color: #00FFFF;
 }
+div.collab-bee{
+  background-image: url("BeeLogo.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 8vw;
+}
 img.icon{
   border-style: solid solid none none;
   border-color: lime;
@@ -45,6 +51,8 @@ img.icon{
   clear: both;
   display: table;
 }
+
+
 h3.game-title {
   margin-left: 20px;
   text-align: left;
@@ -62,5 +70,11 @@ h4.game-desc {
 @media only screen and (max-width: 799px) {
 img.icon{
   border-style: solid solid solid none;
+  
+}
+img.icon::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 }

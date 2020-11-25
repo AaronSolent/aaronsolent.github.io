@@ -1,10 +1,10 @@
 {
 "companyName": "DefaultCompany",
-"productName": "ContraptionGame",
+"productName": "Olimar",
 "productVersion": "0.1",
-"dataUrl": "ContraptionGame.data.unityweb",
-"wasmCodeUrl": "ContraptionGame.wasm.code.unityweb",
-"wasmFrameworkUrl": "ContraptionGame.wasm.framework.unityweb",
+"dataUrl": "FireStarterWeb.data.unityweb",
+"wasmCodeUrl": "FireStarterWeb.wasm.code.unityweb",
+"wasmFrameworkUrl": "FireStarterWeb.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
@@ -12,5 +12,5 @@
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
-"unityVersion": "2019.4.3f1"
+"unityVersion": "2019.4.13f1"
 }

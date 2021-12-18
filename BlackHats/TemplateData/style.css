@@ -1,7 +1,6 @@
-body {
-  background-color: black;
-  color: #00FF00;
-  font-family: 'Coda', cursive;
+body
+{
+	background-color:black;
 }
 
 .webgl-content * {border: 0; margin: 0; padding: 0}

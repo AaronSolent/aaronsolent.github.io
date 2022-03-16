@@ -61,15 +61,12 @@ h3.game-title {
 h4.game-desc {
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 3px;
   border-style: solid none none none;
   border-color: lime;
   text-align: left;
   padding-bottom: 0px;
   font-size: 1.2vw;
-}
-
-a.game-desc {
-  color: inherit;
 }
 
 @media only screen and (max-width: 799px) {

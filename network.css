@@ -17,8 +17,13 @@ a{
 }
 .hyper
 {
+  border-style: solid;
   margin-left:2%;
   text-align:center;
+}
+.hyper:hover
+{
+  background-color:#111111;
 }
 
 h1.header {

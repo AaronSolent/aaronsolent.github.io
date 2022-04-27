@@ -1,0 +1,144 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  color: #00FF00;
+  font-family: 'Coda', cursive;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.gallery-icon
+{
+  width:90%;
+  margin:5%;
+  margin-bottom:0%;
+}
+.gallery-desc
+{
+  font-size: calc(0.8vw + 0.8vh);
+  border-style: solid none none none;
+  border-color: lime;
+}
+.gallery-title
+{
+  border-style: 5px solid none none none;
+}
+
+.item{
+  width:23%;
+  text-align:center;
+  background-color: transparent;
+  border: 4px solid lime;
+  float:left;
+}
+.item:hover
+{
+  background-color:#111111;
+  color: #00FFFF;
+}
+.frontitem:hover
+{
+  background-color:#111111;
+  color: #00FFFF;
+}
+
+.frontitem{
+  width:26%;
+  margin-top:40px;
+  margin-left:5%;
+  margin-right:5%;
+  text-align:center;
+  background-color: transparent;
+  border: 5px solid lime;
+  float:left;
+}
+
+#top-games{
+  width:100%;
+  margin-right:10%;
+  margin-left:7.5%;
+  
+}
+
+h1.header {
+  color: #00FF00;
+  text-align: center;
+  font-size: calc(2vw + 2vh);
+}
+h2.header {
+  color: grey;
+  page-break-before: always;
+  text-align: center;
+  margin:auto;
+  display:block;
+  font-size: calc(1.5vw + 1.5vh);
+}
+.banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:25%;
+}
+div.game-box{
+  color: #00FF00;
+  border-style: solid;
+  border-color: lime;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+div.game-box:hover{
+  color: #00FFFF;
+  background-color:#111111;
+}
+div.collab-bee{
+  background-image: url("http://www.aaronsnetwork.com/BeeLogo.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 8vw;
+}
+img.icon{
+  border-style: solid solid none none;
+  border-color: lime;
+  width: 16vw;
+  float: left;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+h3.game-title {
+  margin-left: 20px;
+  text-align: left;
+  font-size: calc(1vw + 1vh);
+}
+h4.game-desc {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-style: solid none none none;
+  border-color: lime;
+  text-align: left;
+  padding-bottom: 0px;
+  font-size: 1.2vw;
+}
+
+a.game-desc {
+  color: inherit;
+}
+
+@media only screen and (max-width: 799px) {
+img.icon{
+  border-style: solid solid solid none;
+  
+}
+img.icon::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}

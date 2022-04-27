@@ -8,7 +8,11 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
-
+a.altlink
+{
+	text-decoration: none;
+	color: #00FFAA;
+}
 h1.header {
   color: #00FF00;
   text-align: center;
@@ -42,26 +46,46 @@ div.collab-bee{
   background-position: right bottom;
   background-size: 8vw;
 }
-img.icon{
-  border-style: solid solid none none;
-  border-color: lime;
-  width: 16vw;
-  float: left;
+img.small{
+  width: 18vw;
   content: "";
   clear: both;
   display: table;
 }
 
+img.med{
+  width: 30vw;
+  display: block;
+  content: "";
+}
+
+img.large{
+  width: 50vw;
+  content: "";
+  clear: both;
+  display: table;
+}
 
 h3.game-title {
   margin-left: 20px;
   text-align: left;
   font-size: calc(1vw + 1vh);
 }
+span.game-date {
+  margin-right: 20px;
+  float: right;
+  font-size: calc(1vw + 1vh);
+}
+span.navbar
+{
+  max-width:13%
+}
+
 h4.game-desc {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 3px;
+  margin-left: 6px;
+  margin-right: 6px;
   border-style: solid none none none;
   border-color: lime;
   text-align: left;
@@ -69,14 +93,23 @@ h4.game-desc {
   font-size: 1.2vw;
 }
 
-@media only screen and (max-width: 799px) {
-img.icon{
-  border-style: solid solid solid none;
-  
+@media only screen and (min-width: 799px) {
+  div.game-box
+  {
+
+    margin-right: 5%;
+    margin-left: 15%;
+  }
 }
-img.icon::after {
+@media only screen and (max-width: 799px) {
+img.med{
+}
+img.med::after {
   content: "";
   clear: both;
   display: table;
 }
+  span.navbar{
+    visibility: hidden;
+  }
 }

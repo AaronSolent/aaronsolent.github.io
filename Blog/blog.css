@@ -8,6 +8,11 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
+a.sidelink
+{
+	text-decoration: none;
+	color: #00FFAA;
+}
 a.altlink
 {
 	text-decoration: none;
@@ -96,7 +101,8 @@ span.game-date {
 }
 span.navbar
 {
-  max-width:13%
+  max-width:13%;
+  font-size:1vw;
 }
 
 h4.game-desc {

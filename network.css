@@ -14,12 +14,16 @@ a{
   margin-left:31%;
   font-size:calc(2vw);
   width:100%;
+  background-color: transparent;
 }
 .hyper
 {
   border-style: solid;
+  background-color: transparent;
   margin-left:2%;
   text-align:center;
+    box-shadow:
+    0 0 calc(0.5vw) calc(0.5vh) #0f0;
 }
 .hyper:hover
 {
